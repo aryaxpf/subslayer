@@ -2,10 +2,23 @@
 
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ArrowLeft, GitCommit, Zap, Globe, Shield, Rocket, Users, FileText, Scale, TrendingDown, MessageCircle, Sparkles, ShieldCheck } from "lucide-react"
+import { ArrowLeft, GitCommit, Zap, Globe, Shield, Rocket, Users, FileText, Scale, TrendingDown, MessageCircle, Sparkles, ShieldCheck, Smartphone, Layers } from "lucide-react"
 
 export default function ChangelogPage() {
     const releases = [
+        {
+            version: "v1.4.0",
+            date: "February 2026",
+            title: "The Polish Update",
+            description: "Major UI overhaul, Bulk Actions, and PWA (Mobile App) support.",
+            changes: [
+                "PWA Support: Install Subscription Slayer on your phone (iOS/Android).",
+                "Bulk Actions: Select multiple subscriptions to Cancel or Generate a PDF Hit List.",
+                "Smart Currency Inference: Improved detection for mixed currencies (IDR vs USD).",
+                "UI Polish: New Glassmorphism design and Tornado loading animation."
+            ],
+            icon: <Smartphone className="h-5 w-5 text-cyan-500" />
+        },
         {
             version: "v1.3.3",
             date: "February 2026",
